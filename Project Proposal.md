@@ -31,7 +31,8 @@ Features includes:
 
 - Start with EDA of the data
 - Do some cleaning/preprocessing (there might be paper that's in different languages since it is a global research community) 
-  - NLTK, TFIDF, Tokenization, stop words removal, Stemming/Lemmetization, spaCy, etc.
+  - NLTK, TFIDF, Tokenization, stop words removal, Stemming/Lemmetization, etc.
+  - ScispaCy (a Python package containing [spaCy](https://spacy.io/) models for processing biomedical, scientific or clinical text)
 - Topic Modeling - 
   - LSA, NMF
   - LDA
