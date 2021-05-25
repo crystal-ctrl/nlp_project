@@ -1,6 +1,10 @@
 # MVP
 
-After pre-processing 250k+ abstract of scientific articles, I built my topic modeling using gensim LDA with 10 topics as base model. However, the topics seem to be general and overlapping. With the large database and long runtime, it's challenging to interpret topics for each models with different number of topics. So I used topic coherence score to evaluate each models tuning number of topics. It shows that 28 number of topics gives the best coherence score (0.523) comparing to baseline of 10 topics (0.483).
+After pre-processing 250k+ abstract of scientific articles, I built my topic modeling using gensim LDA with 10 topics as base model. However, the topics seem to be general and overlapping. As seen in the wordcoulds, topic 5 and 8 are very similar, as well as topic 6 and 9.
+
+![](https://github.com/crystal-ctrl/nlp_project/blob/main/wordcloud.png)
+
+With the large database and long runtime, it's challenging to interpret topics for each models with different number of topics. So I used topic coherence score to evaluate each models tuning number of topics. It shows that 28 number of topics gives the best coherence score (0.523) comparing to baseline of 10 topics (0.483).
 
 ![](https://github.com/crystal-ctrl/nlp_project/blob/main/coherence_score.png)
 
