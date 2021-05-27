@@ -1,10 +1,6 @@
 import streamlit as st
 import pandas as pd
 from PIL import Image
-# from bokeh.plotting import figure
-# from bokeh.models import ColumnDataSource, CustomJS
-# from bokeh.models import DataTable, TableColumn
-# from streamlit_bokeh_events import streamlit_bokeh_events
 
 ################
 ##   Title    ##
@@ -47,7 +43,7 @@ st.write("**Here are the articles related to: **", option, "(sorted by relevance
 
 
 # import dataset
-data = pd.read_csv("app_topics.csv")
+data = pd.read_csv("./app_topics.csv")
 
 #Convert option string to topic_num
 def option2num(option):
