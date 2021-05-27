@@ -66,7 +66,7 @@ def topic_relative_paper(topic_num):
         link = f'{papers.Title[i]} \n({papers.url[i]})'
         st.write(link, unsafe_allow_html=True)
 
-# st.write(df.columns.tolist())
+st.write(df.head(5))
 # output
 # st.write(option2num(option))
 topic_relative_paper(option2num(option))
