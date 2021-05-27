@@ -1,4 +1,6 @@
-# <img src="https://github.com/crystal-ctrl/nlp_project/blob/main/Covipedia.png" width="100"/>COVIPEDIA - A Recommendation System for Navigating COVID-19 Research Articles
+# <img src="https://github.com/crystal-ctrl/nlp_project/blob/main/Covipedia.png" width="200"/>   COVIPEDIA
+
+### A Recommendation System for Navigating COVID-19 Research Articles
 
 NLP Unsupervised ML project
 
