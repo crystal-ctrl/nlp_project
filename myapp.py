@@ -63,9 +63,9 @@ def option2num(option):
 # function to get top 20 articles
 def topic_relative_paper(topic_num):
     df = data[ data['Topic_Num'] == topic_num ].reset_index(drop=True)
-        for i in range(20):
-            link = f'{df.Title[i]} \n({df.url[i]})'
-            st.write(link, unsafe_allow_html=True)
+    for i in range(20):
+        link = f'{df.Title[i]} \n({df.url[i]})'
+        st.write(link, unsafe_allow_html=True)
 
 # output
 # st.write(option2num(option))
