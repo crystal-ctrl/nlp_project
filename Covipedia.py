@@ -27,7 +27,7 @@ option = st.selectbox(
     "Complications of COVID-19", "Diagnositc Imaging and Surveillance", "Mental Health",
     "Information sharing and Inter-sectoral Collaboration", "ACE2 Receptor",
     "Ethical and Social Considerations", "Material Science", "Diagnositc Testings",
-    "Virus Genetics, Origin, Evolution", "Pharmaceutical Interventions", "Risk factors",
+    "Virus Genetics, Origin, Evolution", "Pharmaceutical Interventions", "High Risk Factors",
     "Treatments and Therapeutics", "Personal Protective Equipment", "Transmission and Mortality Rate",
     "Technology Application", "Cancer", "Social Behavior Research", "Policy and Procedure",
     "Alternative Treatments and Therapies", "Medical Care", "Non-Pharmaceutical Interventions",
