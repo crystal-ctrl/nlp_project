@@ -47,24 +47,27 @@ data = pd.read_csv("./app_ready.csv")
 
 #Convert option string to topic_num
 def option2num(option):
-    option_map = {"Education and Training":0, "Enviromental Impact":1, "Inhibition on COVID-19":2,
-    "Complications of COVID-19":3, "Diagnositc Imaging and Surveillance":4, "Mental Health":5,
-    "Information sharing and Inter-sectoral Collaboration":6, "ACE2 Receptor":7,
-    "Ethical and Social Considerations":8, "Material Science":9, "Diagnositc Testings":10,
-    "Virus Genetics, Origin, Evolution":11, "Pharmaceutical Interventions":12, "High Risk Factors":13,
-    "Treatments and Therapeutics":14, "Personal Protective Equipment":15, "Transmission and Mortality Rate":16,
-    "Technology Application":17, "Cancer":18, "Social Behavior Research":19, "Policy and Procedure":20,
-    "Alternative Treatments and Therapies":21, "Medical Care":22, "Non-Pharmaceutical Interventions":23,
-    "Social Network":24, "Long-Term Effects of COVID-19":25, "Data Science Tools and Algorithms":26,
-    "Critical Care":27}
+    option_map = {"Education and Training":0.0, "Enviromental Impact":1.0, "Inhibition on COVID-19":2.0,
+    "Complications of COVID-19":3.0, "Diagnositc Imaging and Surveillance":4.0, "Mental Health":5.0,
+    "Information sharing and Inter-sectoral Collaboration":6.0, "ACE2 Receptor":7.0,
+    "Ethical and Social Considerations":8.0, "Material Science":9.0, "Diagnositc Testings":10.0,
+    "Virus Genetics, Origin, Evolution":11.0, "Pharmaceutical Interventions":12.0, "High Risk Factors":13.0,
+    "Treatments and Therapeutics":14.0, "Personal Protective Equipment":15.0, "Transmission and Mortality Rate":16.0,
+    "Technology Application":17.0, "Cancer":18.0, "Social Behavior Research":19.0, "Policy and Procedure":20.0,
+    "Alternative Treatments and Therapies":21.0, "Medical Care":22.0, "Non-Pharmaceutical Interventions":23.0,
+    "Social Network":24.0, "Long-Term Effects of COVID-19":25.0, "Data Science Tools and Algorithms":26.0,
+    "Critical Care":27.0}
     return option_map[option]
 
 # function to get top 20 articles
 def topic_relative_paper(topic_num):
-    df = data[data['Topic_Num'] == topic_num].reset_index(drop=True)
-    for i in range(len(df)):
-        link = f'{df.Title[i]} \n({df.url[i]})'
-        st.write(link, unsafe_allow_html=True)
-
+    try:
+        df = data[ data['Topic_Num'] == topic_num ].reset_index(drop=True)
+        for i in range(20):
+            link = f'{df.Title[i]} \n({df.url[i]})'
+            st.write(link, unsafe_allow_html=True)
+    except KeyError:
+        st.write("error")
 # output
+# st.write(option2num(option))
 topic_relative_paper(option2num(option))
