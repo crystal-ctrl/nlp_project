@@ -43,8 +43,7 @@ st.write("**Here are the Top 20 articles related to: **", option, "(sorted by re
 
 
 # import dataset
-data = pd.read_csv("./app_ready.csv", sep=r'\s*,\s*',
-                           header=0, encoding='ascii', engine='python')
+df = pd.read_csv("./app_ready.csv")
 
 #Convert option string to topic_num
 def option2num(option):
@@ -62,11 +61,12 @@ def option2num(option):
 
 # function to get top 20 articles
 def topic_relative_paper(topic_num):
-    df = data[ data['Topic_Num'] == topic_num ].reset_index(drop=True)
+    papers = df[ df.Topic_Num == topic_num ].reset_index(drop=True)
     for i in range(20):
-        link = f'{df.Title[i]} \n({df.url[i]})'
+        link = f'{papers.Title[i]} \n({papers.url[i]})'
         st.write(link, unsafe_allow_html=True)
 
+# st.write(df.columns.tolist())
 # output
 # st.write(option2num(option))
 topic_relative_paper(option2num(option))
