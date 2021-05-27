@@ -1,4 +1,4 @@
-# Project Proposal - UNCOVID
+# Project Proposal - COVIPEDIA
 
 ### Question/need:
 
