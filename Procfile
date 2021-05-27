@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run Covipeida.py
+web: sh setup.sh && streamlit run Covipedia.py
