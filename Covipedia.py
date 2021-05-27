@@ -39,11 +39,11 @@ st.markdown("""---""")
 ################
 ##   Output   ##
 ################
-st.write("**Here are the articles related to: **", option, "(sorted by relevance)")
+st.write("**Here are the Top 20 articles related to: **", option, "(sorted by relevance)")
 
 
 # import dataset
-data = pd.read_csv("./app_topics.csv")
+data = pd.read_csv("./app_ready.csv")
 
 #Convert option string to topic_num
 def option2num(option):
