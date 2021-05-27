@@ -1,4 +1,4 @@
-# ![](https://github.com/crystal-ctrl/nlp_project/blob/main/Covipedia.png)COVIPEDIA - A Recommendation System for Navigating COVID-19 Research Articles
+# ![](https://github.com/crystal-ctrl/nlp_project/blob/main/Covipedia.png =100x)COVIPEDIA - A Recommendation System for Navigating COVID-19 Research Articles
 
 NLP Unsupervised ML project
 
