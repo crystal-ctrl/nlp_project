@@ -83,7 +83,7 @@ The topic model visualization with pyLDAvis is saved as a html file, you can dow
 
 Try out the Heroku app for [COVIPEDIA](https://covipedia.herokuapp.com/)~
 
-To learn more, see my blog post and presentation slides.
+To learn more, see my blog post and [presentation slides](https://github.com/crystal-ctrl/nlp_project/blob/main/presentation.pdf).
 
 
 
